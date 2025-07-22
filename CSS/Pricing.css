@@ -1,0 +1,236 @@
+/* Global Ruls */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+
+.pad-top {
+    padding-top: var(--section-padding);
+}
+
+/* Global Ruls */
+.price-head .head ul li:nth-child(5) a {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* conatiner */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    margin: 0px auto;
+}
+
+/* small  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* mediam */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* conatiner */
+/* START PRICING */
+.pricing-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.one-price {
+    padding: 20px 0;
+    border-top: 1px solid var(--main-color);
+}
+
+.one-price h3 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.one-price .price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.one-price .price span:first-child {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.one-price .price h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.one-price .price span:last-child {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.one-price ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 51px;
+    border: 1px solid;
+    border-color: var(--main-color) transparent;
+    padding: 0px 40px;
+}
+
+.one-price ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.one-price ul li:last-child {
+    border: none;
+}
+
+.one-price a {
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    text-decoration: none;
+}
+
+@media (max-width:1200px) {
+    .pricing-section .container {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:992px) {
+    .pricing-section .container {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:540px) {
+    .pricing-section .container {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contact-price {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.contact-price p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.contact-price a {
+    padding: 15px 25px;
+    background: var(--main-color);
+    color: white;
+    text-decoration: none;
+}
+
+/* end pricing */
+/* start form */
+.form {
+    background-image: url(../Images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.form .container {
+    display: flex;
+    align-items: center;
+    height: 36vh;
+    color: white;
+    gap: 30px;
+}
+
+.signin {
+    flex: 2;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin .email {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.signin .email input:nth-of-type(1) {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.signin .email input::placeholder {
+    color: white;
+}
+
+.signin input {
+    padding: 20px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+}
+
+.form .container p {
+    flex: 3;
+}
+
+@media (max-width:992px) {
+    .form .container {
+        display: block;
+        height: 43vh;
+    }
+
+    .signin {
+        margin: 90px 90px 20px;
+    }
+}
+
+@media (max-width:582px) {
+    .signin {
+        margin-left: 0;
+        width: 360px;
+    }
+}
