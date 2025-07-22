@@ -108,7 +108,7 @@ html {
 }
 
 .portfolio .image:hover .text {
-    height: 55%;
+    height: 50%;
 }
 
 .portfolio .image img {
