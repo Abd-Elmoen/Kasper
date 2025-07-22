@@ -60,6 +60,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-bottom: 50px;
 }
 
 .services .one-serv {
@@ -87,6 +88,16 @@ html {
 
     .services .one-serv {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width:804px) {
+    .background-image .image {
+        display: none;
+    }
+
+    .background-image .my-features {
+        flex: 1;
     }
 }
 
